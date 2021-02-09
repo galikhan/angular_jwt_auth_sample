@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { AuthenticationService } from './_services';
 import { User } from './_models';
 
-@Component({ selector: 'app', templateUrl: 'app.component.html' })
+@Component({ selector: 'app-root', templateUrl: 'app.component.html' })
 export class AppComponent {
     user: User;
 
@@ -15,7 +15,7 @@ export class AppComponent {
         this.authenticationService.user.subscribe(x => this.user = x);
     }
 
-    logout() {
+    logout(): void {
         this.authenticationService.logout();
     }
 }

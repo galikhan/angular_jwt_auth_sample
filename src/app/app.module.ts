@@ -34,4 +34,4 @@ import { LoginComponent } from './login';
     ],
     bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
