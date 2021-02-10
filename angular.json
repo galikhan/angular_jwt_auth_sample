@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-basic-authentication-example": {
+    "angular-jwt-auth": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-basic-authentication-example",
+            "outputPath": "dist/angular-jwt-auth",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-basic-authentication-example:build"
+            "browserTarget": "angular-jwt-auth:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-basic-authentication-example:build:production"
+              "browserTarget": "angular-jwt-auth:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-basic-authentication-example:build"
+            "browserTarget": "angular-jwt-auth:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-basic-authentication-example:serve"
+            "devServerTarget": "angular-jwt-auth:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-basic-authentication-example:serve:production"
+              "devServerTarget": "angular-jwt-auth:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-basic-authentication-example"
+  "defaultProject": "angular-jwt-auth"
 }

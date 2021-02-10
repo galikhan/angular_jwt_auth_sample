@@ -1,5 +1,5 @@
 {
-    "name": "angular-basic-authentication-example",
+    "name": "angular-jwt-auth",
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
